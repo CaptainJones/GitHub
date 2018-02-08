@@ -14,8 +14,8 @@
 struct NodeType
    {
     char *errorMessage; // hard-coded STD_STR_LEN since it is not declared yet
-    struct meta_data_info *Meta_data;
-    struct config_data_info *Config_data;
+    struct Meta_data_info *Meta_data;
+    struct Config_data_info *Config_data;
     struct NodeType *next;
    };
 
@@ -32,7 +32,7 @@ struct NodeType
 
 struct NodeType *addNodeHelper( struct NodeType *currNode, struct NodeType *newNode )
 {
-         if(currNode -> next = NULL)
+         if(currNode -> next == NULL)
          {
                      currNode -> next = newNode;
                      return newNode;
